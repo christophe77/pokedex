@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+Pokédex
+Description :
+Créez une application ReactJS qui interagit avec l'API Pokémon pour afficher une liste de Pokémon. Vous
+pouvez utiliser l'API Pokémon en libre accès, telle que https://pokeapi.co/ ou une autre API de votre choix.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Exigences :
+x Utilisez ReactJS pour créer l'application.
+Utilisez l'API Pokémon pour récupérer la liste des Pokémon. Vous devrez probablement faire
+une requête HTTP pour obtenir ces données. Assurez-vous de gérer les erreurs de requête.
+Affichez la liste des Pokémon avec les informations suivantes pour chaque Pokémon :
+• Nom du Pokémon
+• Numéro du Pokémon
+• Type(s) du Pokémon (par exemple, "Feu" ou "Eau")
+• Image du Pokémon
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Assurez-vous que l'application ait une interface utilisateur propre et conviviale.
+Bonus (en option) :
+Ajoutez une pagination ou un chargement progressif pour afficher un nombre limité de
+Pokémon à la fois (par exemple, 10 Pokémon par page).
+Ajoutez des détails supplémentaires sur chaque Pokémon (par exemple, statistiques, etc.) en
+cliquant sur un Pokémon de la liste.
+Conseils :
+• Vous pouvez utiliser des bibliothèques telles que Axios pour effectuer des requêtes
+HTTP.
+• Vous pouvez utiliser des hooks React tels que useState et useEffect pour gérer l'état et
+les effets de l'application.
+• Assurez-vous d'utiliser des composants réutilisables pour rendre votre code propre et
+maintenable.

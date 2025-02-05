@@ -1,0 +1,41 @@
+.container {
+	position: relative;
+	font-size: 25px;
+	border: 1px solid purple;
+	border-radius: 5px;
+	margin: 12px;
+}
+.cardList {
+	padding: 8px;
+	max-height: 600px;
+	overflow-y: scroll;
+	background-color: black;
+	margin: 0 auto;
+	display: grid;
+	gap: 1rem;
+}
+.cardItem {
+	color: white;
+	padding: 1rem;
+	margin: auto;
+}
+@media (max-width: 599px) {
+	.cardList {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+@media (min-width: 600px) {
+	.cardList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 800px) {
+	.cardList {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (min-width: 1080px) {
+	.cardList {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
